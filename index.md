@@ -1,6 +1,6 @@
 ---
-title: PCoIP Ultra perforamnce tweaks
-description: Learn how to fine-tune the PCoIP protocol based on your session latency and requirements.
+title: PCoIP Ultra performance tweaks
+description: Learn how to fine-tune the PCoIP protocol based on your network conditions.
 author: chad-m-smith
 tags: Teradici, PCoIP Ultra
 date_published: 2021-05-12
