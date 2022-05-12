@@ -10,8 +10,17 @@ Chad Smith | Technical Alliance Architect at Teradici | HP
 
 <p style="background-color:#CAFACA;"><i>Contributed by Teradici employees.</i></p>
 
-This guide shows you how to fine-tune the Teradici PCoIP experience based on individuals network conditions between the client and host systems. This guide is NOT intended to replace Teradici formal [Session Planning Guide](https://www.teradici.com/web-help/pcoip_session_planning/current/tuning_session_variables/pcoip_session_variables/) but rather be a 'cliff-notes' version of the most common tweaks we recommend when helping our customer get a better experience from the default settings. 
+This guide shows you how to fine-tune the Teradici PCoIP experience based on individuals network conditions between the client and host systems. This guide is NOT intended to replace Teradicis formal [Session Planning Guide](https://www.teradici.com/web-help/pcoip_session_planning/current/tuning_session_variables/pcoip_session_variables/) but rather be a 'cliff-notes' version of the most common tweaks we recommend when helping our customer get a better experience from the default settings after initial deployment. 
 
-EC2 Mac instances are available for purchase as Dedicated Hosts through On Demand and Savings Plans pricing models. Billing for EC2 Mac instances is per second with a 24-hour minimum allocation period to comply with the Apple macOS Software License Agreement. Through On Demand, you can launch an EC2 Mac host and be up and running within minutes. At the end of the 24-hour minimum allocation period, the host can be released at any time without further commitment. 
+Part 1: Understanding our connection
+Run speed tests
+Will allow you to set the "Configure Session Bandwidth Floor"
+PCoIP Local GPO changes on Host/Agent System
 
-More Information on EC2 MAC Instance can be found [here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html).
+
+
+Enable PCoIP Ultra mode > CPU offload
+Enable Log Verbosity > Level 3
+Image Quality settings > Set initial quality 70
+Configure Session Bandwidth Floor > 100,000 (kbs)
+Max PCoIP Session > 175,0
