@@ -24,3 +24,6 @@ Enable Log Verbosity > Level 3
 Image Quality settings > Set initial quality 70
 Configure Session Bandwidth Floor > 100,000 (kbs)
 Max PCoIP Session > 175,0
+
+
+The requirement for 4;4;4 or 4:2;0 dictates the Ultra Configurations
