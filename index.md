@@ -23,8 +23,14 @@ On your client system that will establishing the PCoIP connection enusre you are
  
  ![image](https://github.com/ChadSmithTeradici/PCoIP_Ultra_performance_tweaks/blob/main/images/SpeedTest4.png)
  
- Understanding you local ISP bandwidth to your destintaion allows you to set the floor and ceiling values. 
+Next install a use the Teradici Session statistics viewer to see what percentage of 
  
+Generally speaking, the bulk of the PCoIP traffic flows from host to client; every time the client sees missing packets, it provides feedback to the host about how many packets went missing, which the host then uses to adjust its bandwidth estimate. So if you pull up the SSV on the host and examine its logs, the loss that matters most is is the TX loss since it's relative to the host.
+ 
+ 
+ **Configure the Maximum PCoIP Session Bandwidth**
+ 
+ **Configure the PCoIP Session Bandwidth Floor**
  
 
 Part 1: Understanding our connection
