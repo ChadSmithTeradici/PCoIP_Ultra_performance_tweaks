@@ -22,6 +22,10 @@ On your client system that will establishing the PCoIP connection enusre you are
  ![image](https://github.com/ChadSmithTeradici/PCoIP_Ultra_performance_tweaks/blob/main/images/SpeedTest3.png)
  
  ![image](https://github.com/ChadSmithTeradici/PCoIP_Ultra_performance_tweaks/blob/main/images/SpeedTest4.png)
+ 
+ Understanding you local ISP bandwidth to your destintaion allows you to set the floor and ceiling values. 
+ 
+ 
 
 Part 1: Understanding our connection
 Run speed tests
