@@ -15,7 +15,7 @@ This guide shows you how to fine-tune the Teradici PCoIP experience based on ind
 This guide will be divided into three sections that correspond to the data points that will be collected. Finally all these values will be plugged in a PCoIP tuning setting to ensure the communications between the host and client are optimized. 
 
 **Part 1: Understanding your client side bandwidth and latency**
-On your client system that will establishing the PCoIP connection enusre you are NOT using WIFI and using a ethernet cable on your local network. Next, check your local ISPs internet subscription plan by https://www.speedtest.net/. This setting will provide your connection ceiling, understanding in the below example that you will never exceed ~70Mbs download and ~11Mbs upload from your local service provider. It is recommended you run several test and calculate a average download and upload number. 
+On your client system that will establishing the PCoIP connection enusre you are NOT using WIFI and using a ethernet cable on your local network. Next, check your local ISPs internet subscription plan by https://www.speedtest.net/. This setting will provide your connection ceiling, understanding in the below example that you will never exceed ~75Mbs download and ~11Mbs upload from your local service provider. It is recommended you run several test and calculate a average download and upload number. 
 
  ![image](https://github.com/ChadSmithTeradici/PCoIP_Ultra_performance_tweaks/blob/main/images/SpeedTest1.png)
  
