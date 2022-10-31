@@ -32,6 +32,15 @@ To gather this information, we will use the health monitor feature built into th
  
  **Configure the Maximum PCoIP Session Bandwidth**
  
+ Specifies the maximum bandwidth, in kilobits per second, in a PCoIP session. The bandwidth includes all imaging, audio, virtual channel, USB, and control PCoIP traffic. Setting this value prevents the agent from attempting to transmit at a higher rate than the link capacity, which would cause excessive packet loss and a poorer user experience. 
+ 
+ For more information on the specific PCoIP Host setting review the administration guide.
+ 
+As a general rule you want to take your bandwidth number (minus 10%) then enter that number as Max PCoIP Session bandwidth number in kbit/s
+See UnitConverters url; Convert Mbps to Kbps (unitconverters.net)
+
+In our example we have ~70mbp/s -10% = 63mbps (6451.2 kbit/s)
+
  **Configure the PCoIP Session Bandwidth Floor**
  
 
