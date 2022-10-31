@@ -24,7 +24,10 @@ On your client system that will establishing the PCoIP connection enusre you are
  
  **Part 2: Seeing if there are any dropped packets**
  
-Generally speaking, the bulk of the PCoIP traffic flows from host to client; every time the client sees missing packets, it provides feedback to the host about how many packets went missing, which the host then uses to adjust its bandwidth estimate. So if you pull up the SSV on the host and examine its logs, the loss that matters most is is the TX loss since it's relative to the host.
+The bulk of the PCoIP traffic flows from host to client; every time the client sees missing packets, it provides feedback to the host about how many packets went missing, which the host then uses to adjust its bandwidth estimate. When adjusting the session bandwidth value  you can hard-code to accommodate for any dropped packet, if you are experiencing it. 
+
+To gather this information, we will use the health monitor feature built into the PCoIP client which requires 23.01 client release. You will need to keep your eye on the dropped packets number. If you experience any number greater than 2% you should leave a bandwidth buffer by lowering your bandwidth number by 10%. 
+
  
  
  **Configure the Maximum PCoIP Session Bandwidth**
