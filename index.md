@@ -28,7 +28,7 @@ The bulk of the PCoIP traffic flows from host to client; every time the client s
 
 To gather this information, we will use the health monitor feature built into the PCoIP client which requires 23.01 client release. You will need to keep your eye on the dropped packets number. If you experience any number greater than 2% you should leave a bandwidth buffer by lowering your bandwidth number by 10%. 
 
- 
+ ![image](https://github.com/ChadSmithTeradici/PCoIP_Ultra_performance_tweaks/blob/main/images/Health_Connection.png?raw=true)
  
  **Configure the Maximum PCoIP Session Bandwidth**
  
