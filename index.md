@@ -44,22 +44,15 @@ In our example we have ~70mbp/s -10% = 63mbps (6451.2 kbit/s)
  **Configure the PCoIP Session Bandwidth Floor**
  
  Understanding our connection Run speed tests Will allow you to set the "Configure Session Bandwidth Floor" PCoIP Local GPO changes on Host/Agent System.
+ 
+ For more information on the specific PCoIP Host setting review the variable setting page in the [administration guide](https://www.teradici.com/web-help/pcoip_agent/graphics_agent/windows/22.09/admin-guide/configuring/configuring/#pcoip-session-mtu).
+ 
 -	The assumption that you will only be consuming bandwidth just for the PCoIP session and not be using the any other applications that utilize your bandwidth. 
 -	You can use the same number in Max PCoIP session bandwidth setting if you aren't expereince any dropped packets, if you are you should take an additional 10% off the Maximum PCoIP Session Bandwidth number. 
 
+**Set initial quality**
 
-Part 1: Understanding our connection
-Run speed tests
-Will allow you to set the "Configure Session Bandwidth Floor"
-PCoIP Local GPO changes on Host/Agent System
+If you are expereincing a long-haul (high latency) with dropped packet on your connection betwenn client to host, it is best to lower the initial quiality down from the default of 80 to 70 to accomdate a network conditions. If your connection IS NOT expereincing any dropped packets leave at 80. 
 
-
-
-Enable PCoIP Ultra mode > CPU offload
-Enable Log Verbosity > Level 3
-Image Quality settings > Set initial quality 70
-Configure Session Bandwidth Floor > 100,000 (kbs)
-Max PCoIP Session > 175,0
-
-
-The requirement for 4;4;4 or 4:2;0 dictates the Ultra Configurations
+ For more information on the specific PCoIP Host setting review the variable setting page in the [administration guide](https://www.teradici.com/web-help/pcoip_agent/graphics_agent/windows/22.09/admin-guide/configuring/configuring/#pcoip-session-mtu).
+ 
